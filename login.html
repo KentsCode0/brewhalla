@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <style>
+        :root {
+            --ff-inter: 'Inter', sans-serif;
+            --clr-black: #000;
+            --clr-white: #fff;
+        }
+
+        body {
+            font-family: var(--ff-inter);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--clr-white);
+        }
+
+        .login-container {
+            background-color: var(--clr-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: var(--clr-black);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: var(--clr-black);
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: var(--clr-black);
+            color: var(--clr-white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="simulateLogin()">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function simulateLogin() {
+            // Simulate login process (replace with your own logic)
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // For simulation, check if username is 'admin' and password is 'password'
+            if (username === 'admin' && password === 'password') {
+                // Redirect to another page (replace 'redirect.html' with your desired file)
+                window.location.href = 'createmenus.html';
+            } else {
+                window.location.href = 'createmenus.html';
+            }
+        }
+    </script>
+</body>
+</html>

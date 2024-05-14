@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root{
+  --ff-inter: 'Inter', sans-serif;
+  --ff-indieflower: 'indie flower', sans-serif;
+  --ff-imprima: 'imprima', sans-serif;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --clr-lemon-yellow: #ffec09;
+  --clr-light-orange: #FFE1B5;
+  --clr-mid-orange: #FFCB82;
+  --clr-black: #000;
+  --clr-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-bold);
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--clr-black);
+}
+
+header {
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  padding: 0.1rem 1rem;
+  border-bottom: 0.063rem solid var(--clr-black);
+}
+
+header img {
+  width: 3.688rem;
+  height: 3.563rem;
+}
+
+.logo-text h1 {
+  margin: 0;
+  color: var(--clr-black);
+  font-size: 1rem;
+  font-weight: 43.75rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.logo-text a {
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+
+nav ul li a {
+  color: var(--clr-black);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--clr-lemon-yellow);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: relative;
+  top: -0.125rem;
+  right: -0.063rem;
+  color: var(--clr-black);
+  padding: 0.25rem 0.25rem;
+  font-size: 0.75ren;
+  font-weight: bold;
+}
+
+.icons a {
+  margin-left: 1.25rem;
+}
+
+.icons img {
+  width: 1.536rem;
+  height: 1.563rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.create-menu {
+  display: flex;
+  margin-top: 6.8rem;
+  margin-left: 15rem;
+  margin-right: 5rem;
+  background-color: var(--clr-light-orange);
+  border: 1px solid var(--clr-black);
+  border-radius: 0.625rem;
+  padding: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 2px 1px 10px -1px var(--clr-black);
+  height: 20rem;
+  width: 60%;
+}
+
+.outer-menu-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+
+.menu-box {
+    background-color: rgb(255, 225, 181);
+    padding: 1px;
+    border-radius: 10px;
+    border: 2px solid var(--clr-black);
+    height: 15rem;
+    width: 15rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-wrapper {
+    background-color: rgb(255, 203, 130);
+    border-radius: 10px;
+    border: 2px solid var(--clr-black);
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outer-menu-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }  
+
+.menu-detail {
+  text-align: center;
+  margin-left: 10rem;
+  flex: 1;
+  width: 10rem;
+  height: 15rem;
+}
+
+.input-detail input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--clr-black);
+  border-radius: 10px;
+}
+
+.drop-down select {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid var(--clr-black);
+  border-radius: 10px;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  text-align: center;
+}
+
+.drop-down select:hover {
+    background: #dfdfdf;
+}
+
+.drop-down select option {
+  padding: 0.5rem;
+}
+
+.menu-btn {
+  margin-top: 1rem;
+}
+
+.menu-btn a button {
+  margin-top: 57px;
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.menu-btn a button:hover {
+  background-color: #dfdfdf;
+}
