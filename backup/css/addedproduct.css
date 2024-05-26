@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  padding-top: 60px;
   margin: 0;
 }
 
@@ -47,11 +48,15 @@ h2 {
 }
 
 header {
-  background-color: var(--clr-white);
+  position: fixed;
+  top: 0;
+  bottom: 10;
+  width: 98%;
+  background-color: rgb(255, 255, 255); 
   display: flex;
   align-items: center;
   padding: 0.1rem 1rem;
-  border-bottom: 0.063rem solid var(--clr-black);
+  border-bottom: 0.063rem solid #000;
 }
 
 header img {

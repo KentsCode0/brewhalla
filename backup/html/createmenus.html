@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewhalla Cafè</title>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/createmenus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- ********** Logo/Nav/cart/profile **********  -->
+    <header>
+        <div class="wrapper wrapper--nav">
+            <a href="./index.html"><img src="assets/BrewhallaLogo crop.png" alt="Logo"></a>
+        </div>
+        <div class="logo-text">
+            <h1><a href="./index.html">Brewhalla Cafè</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./addedmenus.html">Product List</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="./index.html" style="text-decoration: none; color: black;">Log Out</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="create-menu">    
+            <div class="outer-menu-box">
+                <div class="menu-box">
+                    <div class="img-wrapper">
+                        <div class="outer-menu-img">
+                            <label for="image-upload">
+                                <img src="assets/plus-removebg.png" id="preview-img">
+                            </label>
+                            <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-detail">
+                    <div class="input-detail">
+                        <input type="text" name="name" id="name" placeholder="Enter product name">
+                        <input type="text" name="price" id="price" placeholder="Enter price"> 
+                    </div>
+                    <div class="drop-down">
+                        <select name="category" id="menu-category">
+                            <option value="0">CATEGORY</option>
+                            <option value="1">COFFEE</option>
+                            <option value="2">PASTRY</option>
+                            <option value="3">PASTA</option>
+                        </select>
+                    </div>
+                    <div class="menu-btn">
+                        <button onclick="createMenu()">CONFIRM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/createmenu.js"></script>
+</body>
+</html>

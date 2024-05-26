@@ -7,7 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/order-menu.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!-- ********** Logo/Nav/cart/profile **********  -->
@@ -21,32 +21,41 @@
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./About.html">About</a></li>
+                <li><a href="./createmenus.html">Add product</a></li>
             </ul>
         </nav>
         <div class="icons">
-            <a href="#"><img src="assets/carts.png" alt="Cart"></a><span class="cart-count">[ 0 ]</span>
+            <a href="./index.html" style="text-decoration: none; color: black;">Log Out</a>
         </div>
     </header>
 
     <main>
-    <!--  ********** PROCEED TO PAYMENT ********** -->    
-    <div class="main-order">    
-        <div class="outer-box-order" id="cart-items">
-            
-        </div>
-        <div class="proceed-to-payment">
-            <div class="totalpayment">
-                <h3 id="total-price">TOTAL: ₱ 0</h3>
-              <a href="./mode-of-payment.html"><button>PROCEED TO PAYMENT</button></a>
+        <div class="availabletoday" id="available-today">
+            <div class="txt-box-available">
+                <h2>Available Today</h2>
             </div>
-        </div>
-        <div class="cancel-all">
-            <a href="./index.html" onclick="clearCart()">CANCEL ALL</a>
-        </div>
+        </div>                      
 
-    </div>
+        <div class="available">
+            <!-- Coffee Section -->
+            <div class="txt-box-available">
+                <h2>COFFEE SECTION</h2>
+            </div>
+            <div class="row-container" id="coffee-section"></div>
+
+            <!-- Pastry Section -->
+            <div class="txt-box-available">
+                <h2>PASTRY SECTION</h2>
+            </div>
+            <div class="row-container" id="pastry-section"></div>
+
+            <!-- Pasta Section -->
+            <div class="txt-box-available">
+                <h2>PASTA SECTION</h2>
+            </div>
+            <div class="row-container" id="pasta-section"></div>
+        </div>
     </main>
-    <script src="./js/order.js" defer></script>
+    <script src="js/addedmenu.js"></script>
 </body>
 </html>

@@ -10,8 +10,9 @@
 <body>
     <div class="login-container">
         <h2>Admin Login</h2>
-        <form id="loginForm">
+        <form onsubmit="simulateLogin(event)">
             <div class="form-group">
+                <span id="error"></span>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
             </div>
@@ -20,30 +21,12 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <div class="form-group">
-                <button type="button" onclick="simulateLogin()">Login</button>
+                <button type="submit">Login</button>
+                <span id="error"></span>
             </div>
         </form>
-        <a href="./landingpage.html"><button>Back</button></a>
+        <a href="./index.html"><button>Back</button></a>
     </div>
-
-    <script>
-        function simulateLogin() {
-<<<<<<< HEAD
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-=======
-           
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-         
->>>>>>> b4dbbe8cc74856c18870621e5693b193ab29f152
-            if (username === 'admin' && password === 'password') {
-                window.location.href = 'createmenus.html';
-            } else {
-                window.location.href = 'createmenus.html';
-            }
-        }
-    </script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

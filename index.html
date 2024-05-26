@@ -7,7 +7,7 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link href="css/landingpage.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!-- ********** Logo/Nav/cart/profile **********  -->
@@ -20,14 +20,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./landingpage.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./About.html">About</a></li>
               
             </ul>
         </nav>
         <div class="icons">
-            <a href="./order-menu.html"><img src="assets/carts.png" alt="Cart"></a><span class="cart-count">[ 3 ]</span>
-            <a href="./login.html"><img src="assets/profile.png" alt="Profile"></a>
+            <a href="./order-menu.html"><img src="assets/carts.png" alt="Cart"></a><span class="cart-count">[ 0 ]</span>
         </div>
     </header>
 
@@ -63,19 +62,25 @@
                         <div class="box-category">
                             <div class="txt-container">
                             <div class="coffee">
+                                <a href="#coffee-section">
                                 <img src="assets/coffee.jpeg">
+                                </a>
                             </div>
                             <h3>COFFEE</h3>
                             </div>
                             <div class="txt-container">   
                             <div class="pastry">
+                                <a href="#pastry-section">
                                 <img src="assets/pastry.jpeg">
+                                </a>
                             </div>
                             <h3>PASTRY</h3>
                             </div>
                             <div class="txt-container">
                             <div class="pasta">
+                                <a href="#pasta-section">
                                 <img src="assets/pasta.jpeg">
+                                </a>
                             </div>
                             <h3>PASTA</h3>
                             </div>
@@ -90,24 +95,26 @@
 
             <div class="available">
                 <!-- ********** COFFEE SECTION ********** -->
-                <div class="txt-box-available">
+                <div class="txt-box-available" id="coffee-section">
                     <h2>COFFEE SECTION</h2>
                 </div>
                 <div class="row-container">
                     <div class="outer-box">
                         <div class="txt-container">
                             <div class="coffee">
-                                <img src="assets/coffee-left.jpeg">
-                                <P style="margin-top: 10px; margin-bottom: 0;">COFEE 1</P>
+                                <img src="assets/coffee-left.jpeg" alt="COFFEE 1">
+                                <p style="margin-top: 10px; margin-bottom: 0;">COFFEE 1</p>
                             </div>
-                                <div class="main-inner-box">
+                            <div class="main-inner-box">
                                 <div class="inner-box-left">
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('coffee1', 'COFFEE 1', 75, 'assets/coffee-left.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
-                                </div>  
+                            </div>  
                         </div>
                     </div>
                     <div class="outer-box">
@@ -121,7 +128,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('coffee2', 'COFFEE 2', 75, 'assets/coffee-middle.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -137,14 +146,16 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('coffee3', 'COFFEE 3', 75, 'assets/cofee-right.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
                     </div>
                 </div>
                 <!-- ********** PASTRY SECTION ********** -->
-                <div class="txt-box-available">
+                <div class="txt-box-available" id="pastry-section">
                     <h2>PASTRY SECTION</h2>
                 </div>
                 <div class="row-container">
@@ -159,7 +170,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pastry1', 'CUPCAKE 1', 75, 'assets/cupcake 1.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -175,7 +188,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pastry2', 'CUPCAKE 2', 75, 'assets/cupcake 2.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -191,14 +206,16 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pastry3', 'CUPCAKE 3', 75, 'assets/cupcake 3.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
                     </div>
                 </div>
                 <!-- ********** PASTA SECTION ********** -->
-                <div class="txt-box-available">
+                <div class="txt-box-available" id="pasta-section">
                     <h2>PASTA SECTION</h2>
                 </div>
                 <div class="row-container">
@@ -213,7 +230,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pasta1', 'PASTA 1', 75, 'assets/pasta 1.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -229,7 +248,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pasta2', 'PASTA 2', 75, 'assets/pasta 2.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -245,7 +266,9 @@
                                     <div class="price">₱75.00</div>
                                 </div>
                                 <div class="inner-box-rignt">
-                                    <div class="addtocart-btn"><a href="./order-menu.html"><button>ADD TO CART</button></a></div>
+                                    <div class="addtocart-btn">
+                                        <button onclick="addToCart('pasta3', 'PASTA 3', 75, 'assets/pasta 3.jpeg')">ADD TO CART</button>
+                                    </div>
                                 </div>
                                 </div>  
                         </div>
@@ -298,5 +321,6 @@
             </div>
         </div>
     </main>
+    <script src="./js/order.js"></script>
 </body>
 </html> 

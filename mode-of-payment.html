@@ -13,21 +13,19 @@
     <!-- ********** Logo/Nav/cart/profile **********  -->
     <header>
         <div class="wrapper wrapper--nav">
-            <a href="./landingpage.html"><img src="assets/BrewhallaLogo crop.png" alt="Logo"></a>
+            <a href="./index.html"><img src="assets/BrewhallaLogo crop.png" alt="Logo"></a>
         </div>
         <div class="logo-text">
-            <h1><a href="./landingpage.html">Brewhalla Cafè</a></h1>
+            <h1><a href="./index.html">Brewhalla Cafè</a></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="./landingpage.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
             </ul>
         </nav>
         <div class="icons">
-            <a href="#"><img src="assets/carts.png" alt="Cart"></a><span class="cart-count">[ 3 ]</span>
-            <a href="#"><img src="assets/profile.png" alt="Profile"></a>
+            <a href="./order-menu.html"><img src="assets/carts.png" alt="Cart"></a><span class="cart-count"></span>
         </div>
     </header>
 
@@ -36,15 +34,10 @@
     <div class="paymentmode">
         <div class="payment-left-dis">
             <div class="total-button">
-                <div class="total-amount">
-                    <h4>Cupcake 1 - ₱ 75.00</h4>
-                    <h4>Cupcake 2 - ₱ 75.00</h4>
-                    <h4>Cupcake 3 - ₱ 75.00</h4>
-                    <h4>_____________________</h4>
-                    <h4>TOTAL ₱ 255.00</h4>
+                <div class="total-amount" id="total-amount">
                 </div>
                 <div class="button">
-                    <a href="./landingpage.html" style="font-size: large; font-weight: bold;">COMPLETE</a>
+                    <a href="#" id="complete-payment" style="font-size: large; font-weight: bold;">COMPLETE</a>
                 </div>
             </div>
             <div class="payment-right-dis">
@@ -65,6 +58,10 @@
             </div>
         </div>
     </div>
+    </main>
+    <script src="./js/payment.js"></script>
+</body>
+</html>
     
 
 
