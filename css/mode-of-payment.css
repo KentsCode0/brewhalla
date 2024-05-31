@@ -73,6 +73,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:"slnt" 0;
+    margin-left: 10px;
   }
 
   .logo-text a {
@@ -249,6 +250,22 @@
     border: 1px solid #000;
     border-radius: 0.625rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  .button-row button {
+  text-align: center;
+  background: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
   }
   
   .button {

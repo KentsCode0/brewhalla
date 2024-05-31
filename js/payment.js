@@ -1,14 +1,17 @@
- // Function to load cart items and display them
- function loadCartItems() {
+// Function to load cart items and display them
+function loadCartItems() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let totalAmountContainer = document.getElementById('total-amount');
     totalAmountContainer.innerHTML = '';
     let total = 0;
 
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         total += item.price * item.quantity;
         totalAmountContainer.innerHTML += `
-            <h4>${item.name} - ₱ ${item.price} x ${item.quantity}</h4>
+            <div class"items">
+                <h4>${item.name} - ₱ ${item.price} x ${item.quantity}</h4>
+                </div>
+            </div>
         `;
     });
 
@@ -16,6 +19,20 @@
         <h4>_____________________</h4>
         <h4>TOTAL ₱ ${total.toFixed(2)}</h4>
     `;
+}
+
+// Function to update the quantity of an item
+function updateQuantity(index, change) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart[index]) {
+        cart[index].quantity += change;
+        if (cart[index].quantity <= 0) {
+            cart.splice(index, 1);
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        loadCartItems();
+        updateCartCount();
+    }
 }
 
 // Function to complete the payment

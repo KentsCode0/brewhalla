@@ -40,7 +40,10 @@ function loadCartItems() {
                 <img src="${item.image}" alt="${item.name}">
                 <div class="c-btn">
                     <h3>${item.name}: ₱${item.price} x ${item.quantity} = ₱${item.price * item.quantity}</h3>
+                    <div class="button-row">
                     <button onclick="removeFromCart('${item.id}')">CANCEL</button>
+                    <button onclick="addQuantity('${item.id}')">ADD</button>
+                    </div>
                 </div>
             </div>
         `;
@@ -58,6 +61,18 @@ function removeFromCart(itemId) {
         if (cart[itemIndex].quantity === 0) {
             cart.splice(itemIndex, 1);
         }
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCartItems();
+    updateCartCount();
+}
+
+// Function to add quantity of item in cart
+function addQuantity(itemId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let itemIndex = cart.findIndex(item => item.id === itemId);
+    if (itemIndex !== -1) {
+        cart[itemIndex].quantity += 1;
     }
     localStorage.setItem('cart', JSON.stringify(cart));
     loadCartItems();
